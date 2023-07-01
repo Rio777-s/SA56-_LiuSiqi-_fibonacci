@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY target/fibonacci-0.0.1-SNAPSHOT.jar app.jar
 
-EXPOSE 8080
+EXPOSE $PORT
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "-Dserver.port=$PORT", "app.jar"]
 
 
