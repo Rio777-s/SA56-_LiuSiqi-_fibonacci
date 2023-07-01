@@ -2,7 +2,7 @@
 
 
 
-#### Basci framework
+#### Basic framework
 
 - ProgrammingLanguage:    Java
 
@@ -14,7 +14,7 @@
 
 
 
-#### Launching
+#### Start
 
 ```
 docker build -t fibonacci .
@@ -26,7 +26,7 @@ After the dockerImage has been built
 docker run -p 8080:8080 fibonacci
 ```
 
-Then u can approach [localhost:8080]() to view the application
+Then you can access the application by visiting localhost:8080.
 
 
 
