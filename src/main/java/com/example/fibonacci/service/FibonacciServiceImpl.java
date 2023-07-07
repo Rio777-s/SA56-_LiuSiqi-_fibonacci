@@ -17,7 +17,7 @@ public class FibonacciServiceImpl implements FibonacciService{
         int start_0 = 0;
         int start_1 = 1;
         
-        if(num < 50){
+        if(num < 50){  //For the first 50 numbers
             List<Long> longList = new ArrayList<>();
 
             longList.add(Long.valueOf(start_0));
@@ -33,7 +33,7 @@ public class FibonacciServiceImpl implements FibonacciService{
 
             res = longList;
         }
-        else{
+        else{  //For big numbers
 
             List<BigInteger> BigList = new ArrayList<>();
 
@@ -59,8 +59,10 @@ public class FibonacciServiceImpl implements FibonacciService{
     public <T extends Number> T[] getSortedResult(List<T> normalresult ){
 
             int sizeOfsres = normalresult.size();
+            
             @SuppressWarnings("unchecked")
             T[] sres = (T[]) new Number[sizeOfsres];
+
             @SuppressWarnings("unchecked")
             T[] tmp = (T[]) new Number[sizeOfsres];
 	        int index_e = 0;
