@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: auto;
+}
+
+.btn-primary {
+  color: #fff; 
+  background-color: #007bff;
+  border-color: #007bff;
+
+  &:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+
+  &:active {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf;
+  }
+
+  &:disabled {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+}
+
+.rounded-pill {
+  border-radius: 1rem;
+  margin: 10px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.result-container {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.sizef{
+  font-size: 18px;
+}
+
+
+
+
+
